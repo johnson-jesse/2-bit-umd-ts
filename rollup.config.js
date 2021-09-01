@@ -4,20 +4,22 @@ import { visualizer } from 'rollup-plugin-visualizer';
 import del from 'rollup-plugin-delete';
 import fileSize from 'rollup-plugin-filesize';
 import { uglify } from "rollup-plugin-uglify";
+import typescript from 'rollup-plugin-typescript2';
 
 export default {
-  input: "src/main.js",
+  input: "src/main.ts",
   output: {
     file: "dist/bundle.js",
     format: "umd",
     name: "2BitUmd"
   },
   plugins: [
-    resolve({moduleDirectory: ['node_modules']}),
-    babel({babelHelpers: 'bundled' }),
-    visualizer({filename:'meta/stats.html'}),
     del({ targets: ['dist/*', 'meta/*'] }),
+    resolve({moduleDirectories: ['node_modules']}),
+    babel({babelHelpers: 'bundled' }),
+    typescript(),
+    uglify(),
+    visualizer({filename:'meta/stats.html'}),
     fileSize(),
-    uglify()
   ]
 };

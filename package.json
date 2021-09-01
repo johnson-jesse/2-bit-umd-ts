@@ -1,18 +1,19 @@
 {
-  "name": "@2-bit/umd",
+  "name": "@2-bit/umd-ts",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "A template for rapid setup for publishing as umd.",
   "main": "dist/bundle.js",
+  "types": "./dist/main.d.ts",
   "author": "Jesse A. Johnson <jesseajohnson@pm.me>",
   "license": "MIT",
-  "homepage": "https://github.com/johnson-jesse/2-bit-umd#readme",
+  "homepage": "https://github.com/johnson-jesse/2-bit-umd-ts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnson-jesse/2-bit-umd.git"
+    "url": "git+https://github.com/johnson-jesse/2-bit-umd-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/johnson-jesse/2-bit-umd/issues"
+    "url": "https://github.com/johnson-jesse/2-bit-umd-ts/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -29,11 +30,15 @@
     "rollup": "^2.56.3",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-uglify": "^6.0.4",
-    "rollup-plugin-visualizer": "^5.5.2"
+    "rollup-plugin-visualizer": "^5.5.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2"
   },
   "keywords": [
     "umd",
+    "ts",
     "example",
     "template",
     "rollup"
