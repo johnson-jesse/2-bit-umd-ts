@@ -1,0 +1,41 @@
+{
+  "name": "@2-bit/umd",
+  "private": false,
+  "version": "0.0.3",
+  "description": "A template for rapid setup for publishing as umd.",
+  "main": "dist/bundle.js",
+  "author": "Jesse A. Johnson <jesseajohnson@pm.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/johnson-jesse/2-bit-umd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnson-jesse/2-bit-umd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnson-jesse/2-bit-umd/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "yarn rollup --config rollup.config.js",
+    "publish": "npm publish --access public --otp fd29f168-7f67-406b-9f60-ebcf22a3b262"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "rollup": "^2.56.3",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-visualizer": "^5.5.2"
+  },
+  "keywords": [
+    "umd",
+    "example",
+    "template",
+    "rollup"
+  ]
+}
