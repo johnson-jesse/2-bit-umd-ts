@@ -1,4 +1,4 @@
-# @2-bit/umd
+# @2-bit/umd-ts
 A simple rollup bundler configuration for simple JavaScript projects intended for publishing as umd. This package demonstrates the end result of cloning this template and building your own package for publishing.
 
 ### Setup
